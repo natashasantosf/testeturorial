@@ -1,15 +1,7 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-const pageTitle = "Natasha Santos";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/baseLayout.astro';
+const pageTitle = "Página Inicial";
 ---
-
-<title>{pageTitle}</title>
-<Layout>
-	<h1>Meu site Astro</h1>
-	<h1>testando!</h1>
-	<Welcome />
-</Layout>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>O subtítulo incrível do meu blog</h2>
+</BaseLayout>

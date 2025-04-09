@@ -1,27 +1,14 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/baseLayout.astro';
 const pageTitle = "Blog Natasha";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<title>{pageTitle}</title>
-<body>
-    <a href="/">Início</a>
-    <a href="/about/">Sobre</a>
-    <a href="/blog/">Blog</a>
-
-    <h1>Meu Site Astro</h1>
-    <h1>Meu Blog de Aprendizado sobre Astro</h1>
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Meu Blog de Aprendizado sobre Astro</h2>
     <p>Aqui é onde postarei sobre minha jornada aprendendo Astro</p>
-
     <ul>
         <li><a href="/posts/post-1/"> Postagem 1</a></li>
         <li><a href="/posts/post-2/"> Postagem 2</a></li>
         <li><a href="/posts/post-3/"> Postagem 3</a></li>
-
     </ul>
-
-</body>
+</BaseLayout>

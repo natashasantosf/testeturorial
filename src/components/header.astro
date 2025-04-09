@@ -1,0 +1,23 @@
+---
+import Hamburguer from './hamburguer.astro';
+import Navigation from './Navigation.astro';
+---
+<header>
+    <nav>  
+    <Hamburguer />
+    <Navigation />
+    </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fab8f1;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
